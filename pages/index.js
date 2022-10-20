@@ -90,8 +90,8 @@ export default function Home() {
           <div className="w3-white w3-margin">
             <img src="/aboutus.jpg" alt="about us" style={{width:'100%'}} className="w3-grayscale" />
             <div className="w3-container w3-black">
-              <h4>ABOUT US</h4>
-              <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+              <h4>ABOUT</h4>
+              <p>This resource provides you with technical analysis details, as well as the top five gaining, losing, and most active stocks for the day, key economic events, announcements, news, and fundamentals of a company..</p>
             </div>
           </div>
 

@@ -5,6 +5,8 @@ import Info from '../components/Info';
 import Technical from '../components/Technical';
 import Profile from '../components/Profile';
 import Fundemental from '../components/Fundemental';
+import Search from '../components/Search';
+
 export default function Symbol() {
 
     const [name,setName] = useState(false);
@@ -18,10 +20,20 @@ export default function Symbol() {
         setName(name)
     }
 
+    const home = () => {
+        router.replace('/')
+    }
+
     return (
         <>
+            <div className='w3-padding'>
+                <button className='w3-button w3-light-grey w3-text-blue' onClick={home}><b>HOME</b></button>
+            </div>
             <header className="w3-container w3-center w3-padding-48 w3-white">
                 {name && <h1 className="w3-xxxlarge"><b>{name}</b></h1>}
+                <h6>
+                    <Search />
+                </h6>
             </header>
             <header>{render && <Info symbol={symbol}/>}</header>
             <div className="w3-row w3-padding w3-border">

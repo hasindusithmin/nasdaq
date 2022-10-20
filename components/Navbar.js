@@ -2,12 +2,9 @@ import Script from 'next/script'
 
 
 export default function Navbar() {
-    const wrapperStyle = {
-        width: "100%",
-        height: "100%"
-    }
+   
     return <>
-        <div id="navbar" style={wrapperStyle}>
+        <div id="navbar">
             <Script
                 id="ticker-widget"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"

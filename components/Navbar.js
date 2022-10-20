@@ -7,12 +7,12 @@ export default function Navbar() {
         height: "100%"
     }
     return <>
-        <div id="tradingview-wrapper" style={wrapperStyle}>
+        <div id="navbar" style={wrapperStyle}>
             <Script
-                id="tradingview-widget"
+                id="ticker-widget"
                 src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
                 onLoad={() => {
-                    document.getElementById('tradingview-wrapper').appendChild(document.getElementById('tradingview-widget'));
+                    document.getElementById('navbar').appendChild(document.getElementById('ticker-widget'));
                 }}>
                 {JSON.stringify({
                     "symbols": [

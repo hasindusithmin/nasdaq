@@ -1,4 +1,4 @@
 # nasdaq
 ## Nasdaq 100 Index
 
-(web)[https://nasdaq.vercel.app]
+[web](https://nasdaq.vercel.app)

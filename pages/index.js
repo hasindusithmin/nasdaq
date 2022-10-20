@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Script from 'next/script';
-import Link from 'next/link';
 import Search from '../components/Search';
-
+import Tag from '../components/Tag';
 export default function Home() {
 
   return (
@@ -56,7 +55,7 @@ export default function Home() {
               <h5>What is <span className="w3-opacity">nasdaq - 100 ?</span></h5>
             </div>
             <div className='w3-justify'>
-              <img src="https://via.placeholder.com/600x395?text=NASDAQ" alt="nasdaq" style={{width:'100%'}} className="w3-padding-16" />
+              <img src="/nasdaq.jpg" alt="nasdaq" width={'100%'}   className="w3-padding-16" />
               <p>
                 <strong>The Nasdaq-100 </strong>is a stock market index made up of 102 equity securities issued by 101 of the largest non-financial companies listed on the Nasdaq stock exchange. It is a modified capitalization-weighted index. The stocks' weights in the index are based on their market capitalizations, with certain rules capping the influence of the largest components. It is limited to companies from a single exchange, and it does not have any financial companies. The financial companies are in a separate index, the <b>NASDAQ Financial-100</b>.
               </p>
@@ -89,7 +88,7 @@ export default function Home() {
         <div className='w3-col l4'>
 
           <div className="w3-white w3-margin">
-            <img src="https://via.placeholder.com/300x160?text=ABOUT%20US" alt="about us" style={{width:'100%'}} className="w3-grayscale" />
+            <img src="/aboutus.jpg" alt="about us" style={{width:'100%'}} className="w3-grayscale" />
             <div className="w3-container w3-black">
               <h4>ABOUT US</h4>
               <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
@@ -109,7 +108,18 @@ export default function Home() {
           </div>
 
           <hr/>
-              
+          
+          <div className="w3-white w3-margin">
+            <div className="w3-container w3-padding w3-black">
+              <h4>Tags</h4>
+            </div>
+            <div className="w3-container">
+               <Tag/>
+            </div>
+          </div>
+
+          <hr/>
+
           <div className="w3-white w3-margin">
             <div className="w3-container w3-padding w3-black">
               <h4>Advertise</h4>
@@ -118,28 +128,6 @@ export default function Home() {
               <div className="w3-container w3-display-container w3-light-grey w3-section" style={{height:'200px'}}>
                 <span className="w3-display-middle">Your AD Here</span>
               </div>
-            </div>
-          </div>
-
-          <hr/>
-          
-          <div className="w3-white w3-margin">
-            <div className="w3-container w3-padding w3-black">
-              <h4>Tags</h4>
-            </div>
-            <div className="w3-container w3-white">
-              <p>
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Apple IncD</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Cisco Systems Inc.D</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>eBay Inc.D</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Amazon.com Inc.D</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Intel CorporationD</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Alphabet Inc</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Netflix Inc.D</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Microsoft Corp.D</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>NVIDIA CorporationD</span></Link></span>&nbsp;
-                <span className="w3-tag w3-light-grey w3-small w3-margin-bottom"><Link href="/"><span style={{textDecoration:'none'}}>Tesla Inc.D</span></Link></span>&nbsp;
-              </p>
             </div>
           </div>
 

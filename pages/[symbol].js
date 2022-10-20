@@ -6,6 +6,7 @@ import Technical from '../components/Technical';
 import Profile from '../components/Profile';
 import Fundemental from '../components/Fundemental';
 import Search from '../components/Search';
+import Tag from '../components/Tag';
 
 export default function Symbol() {
 
@@ -51,6 +52,8 @@ export default function Symbol() {
                         </div>
                         </div>
                     </div>
+                    
+
                 </div>
             </div>
             <div className='w3-hide-mobile w3-padding'></div>

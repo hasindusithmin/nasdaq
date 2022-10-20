@@ -1,15 +1,13 @@
 import ndx from "../public/ndx.json"
 import { useEffect } from "react";
-import { useRouter } from 'next/router'
 import autoComplete from "@tarekraafat/autocomplete.js"
 
 export default function Search() {
-    const router = useRouter()
 
     const widget = ()=>{
         const name = document.getElementById('autoComplete').value;
         const symbol = ndx[name]
-        router.replace(`/${symbol}`)
+        window.location.replace(`/${symbol}`)
     }
     useEffect(()=>{
         const autoCompleteJS = new autoComplete({

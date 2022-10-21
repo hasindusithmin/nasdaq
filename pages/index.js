@@ -24,7 +24,7 @@ export default function Home() {
       </Head>
       <header className="w3-container w3-center w3-padding-48 w3-white">
         <h1 className="w3-xxxlarge"><b>NASDAQ 100 INDEX</b></h1>
-        <h6>Welcome to the <span className="w3-tag">nasdaq.vercel.app</span></h6>
+        <h6>Welcome to the <span className="w3-tag">nasdaq100.vercel.app</span></h6>
       </header>
       <header id='home-header'>
         <Script

@@ -79,7 +79,7 @@ export default function Navbar() {
                         },
                         {
                             "description": "",
-                            "proName": "NASDAQ:AZNA"
+                            "proName": "NASDAQ:AZN"
                         },
                         {
                             "description": "",
@@ -311,7 +311,7 @@ export default function Navbar() {
                         },
                         {
                             "description": "",
-                            "proName": "NASDAQ:ORLYO"
+                            "proName": "NASDAQ:ORLY"
                         },
                         {
                             "description": "",

@@ -35,7 +35,7 @@ export default function Symbol() {
     }
 
     const home = () => {
-        router.replace('/')
+        window.location.href = '/'
     }
 
     return (
